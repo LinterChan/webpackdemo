@@ -3,5 +3,5 @@ const sub1 = require('./sub1.js')
 import '../static/main.css'
 sub1.test1()
 sub1.test2()
-let a = 'aaaa'
+let a = 'test--no travis.yml'
 console.log(a)
