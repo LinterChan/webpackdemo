@@ -5,4 +5,9 @@ function test2() {
     console.log('sub1 test2')
     console.log(this)
 }
-module.exports = { test1, test2}
+function test3() {
+    return {
+        name: 'zhou'
+    }
+}
+module.exports = { test1, test2, test3}

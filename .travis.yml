@@ -4,10 +4,15 @@ node_js:
   - "8"
 
 install:
-  # - npm install
+  - npm install -g codecov
+  - npm install
 
 
 before_script:
 
 script:
+  - npm run jest
   - npm run build:test
+
+after_success:
+  - codecov
